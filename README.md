@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="./frontend/src/assets/react.svg" width="100%" />
+<img src="./frontend/src/assets/react.svg" width="40%" />
 HERO CODE - Searching Books
 
 </h1>
