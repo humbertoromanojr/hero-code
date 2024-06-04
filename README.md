@@ -1,5 +1,7 @@
 <h1 align="center">
 <img src="./frontend/src/assets/react.svg" width="40%" />
+<br />
+
 HERO CODE - Searching Books
 
 </h1>
@@ -16,12 +18,12 @@ HERO CODE - Searching Books
 ![Badge](https://img.shields.io/github/license/humbertoromanojr/hero-code)
 ![Badge](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fhumbertoromanojr%2Fhero-code)
 
-## Mobile Libraries
+## Libraries
 
 - <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — A JavaScript library for building user interfaces
-- <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React.
 
 - [Vite](https://vitejs.dev/guide/)
+- [Tailwindcss](https://tailwindcss.com/docs/installation)
 
 ## Important Settings
 
