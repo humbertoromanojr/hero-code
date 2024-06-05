@@ -18,7 +18,7 @@ HERO CODE - Searching Books
 ![Badge](https://img.shields.io/github/license/humbertoromanojr/hero-code)
 ![Badge](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fhumbertoromanojr%2Fhero-code)
 
-## Libraries
+## Frontend Libraries
 
 - <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — A JavaScript library for building user interfaces
 
@@ -37,7 +37,9 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 - Install ViteJS: `npm create vite@latest`;
 - Install Tailwindcss: <br />
   - `npm install -D tailwindcss postcss autoprefixer`; <br />
-  - `npx tailwindcss init`; you follow steps in DOC
+  - `npx tailwindcss init`; you follow steps in DOC;<br />
+    <br />
+- Install classnames: `npm install classnames`;
 
 ## Demonstration
 
