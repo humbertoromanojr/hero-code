@@ -24,6 +24,7 @@ HERO CODE - Searching Books
 
 - [Vite](https://vitejs.dev/guide/)
 - [Tailwindcss](https://tailwindcss.com/docs/installation)
+- [Google Fonts](https://fonts.google.com/)
 
 ## Important Settings
 
@@ -34,6 +35,9 @@ These other settings are extremely important, without them, your application wil
 Estas outras configurações, são de extrema importância, sem elas, a sua aplicação não vai funcionar, se não seguir passo a passo.
 
 - Install ViteJS: `npm create vite@latest`;
+- Install Tailwindcss: <br />
+  - `npm install -D tailwindcss postcss autoprefixer`; <br />
+  - `npx tailwindcss init`; you follow steps in DOC
 
 ## Demonstration
 
@@ -72,13 +76,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 - <img src="https://drive.google.com/uc?export=view&id=160InxEPlK0IynTEGEmQJDETo_8grncjI" alt="" width="22" border="0" /> astronomi@gmail.com <br />
   <br /> <br />
 
-## My Band
-
-Whether you're a fellow developer or just dropped in, please listen to my band and the music I make in my spare time:
-
-- [Crux Cullum](https://cruxcullum.bandcamp.com/) <br />
-
-Made with :heart: and lots of animation by :guitar: Humberto Jr :guitar:
+##
 
 ##
 
