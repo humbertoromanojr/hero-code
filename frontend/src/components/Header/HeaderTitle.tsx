@@ -1,7 +1,7 @@
 export default function HeaderTitle() {
   return (
     <>
-      <p className="text-black text-3xl">FindBook</p>
+      <p className="text-black text-3xl font-bold">FindBook</p>
     </>
   );
 }
