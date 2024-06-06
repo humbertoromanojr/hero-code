@@ -1,10 +1,12 @@
 import { useCallback } from "react";
+import classNames from "classnames";
 
 type Props = {
   title: string;
+  classname?: string;
 };
 
-export default function Tag({ title }: Props) {
+export default function Tag({ title, classname }: Props) {
   const randomColors = useCallback(() => {
     const hue = Math.floor(Math.random() * 360);
     const lightness = `hsl(${hue}, 100%, 95%)`;
@@ -19,7 +21,10 @@ export default function Tag({ title }: Props) {
         backgroundColor: randomColors().lightness,
         color: randomColors().darkness,
       }}
-      className="rounded-full bg-opacity-50 px-3 text-center w-fit py-2"
+      className={classNames([
+        `rounded-full bg-opacity-50 px-3 text-center w-fit py-2`,
+        classname,
+      ])}
     >
       {title}
     </p>
