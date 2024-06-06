@@ -3,10 +3,16 @@ import classNames from "classnames";
 type Props = {
   title: string;
   classname?: string;
-  variant: "light" | "dark";
+  variant?: "light" | "dark";
+  onClick?: (title: any) => void;
 };
 
-export default function Button({ title, classname, variant = "dark" }: Props) {
+export default function Button({
+  title,
+  classname,
+  variant = "dark",
+  onClick,
+}: Props) {
   return (
     <button
       className={classNames([
@@ -16,6 +22,7 @@ export default function Button({ title, classname, variant = "dark" }: Props) {
           `text-evergreen-light bg-white border-evergreen-light border-2`,
         classname,
       ])}
+      onClick={onClick}
     >
       {title}
     </button>
