@@ -12,7 +12,7 @@ export default function Header() {
       <Container>
         <HeaderTitle />
         <div className="mt-28">
-          <p className="text-6xl font-bold text-evergreen">
+          <p className="md:text-6xl text-3xl font-bold text-evergreen">
             Encontre livros <br /> que seja a sua cara!
           </p>
           <p className="my-5 text-gray-500">Lorem ipsum</p>

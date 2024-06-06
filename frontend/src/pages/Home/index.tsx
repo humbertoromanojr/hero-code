@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import Container from "../../components/Container/Container";
 import Title from "../../components/Title/Title";
 import Button from "../../components/Button/Button";
+import Card from "../../components/Card/Card";
 
 const genderBooks = [
   "Ação",
@@ -32,12 +33,12 @@ export default function Home() {
   );
 
   return (
-    <>
+    <div className="mb-5">
       <Header />
       <Container>
         <Title title="O que você quer ler hoje?" />
 
-        <div className="gap-8 grid grid-cols-8 my-6">
+        <div className="gap-8 grid md:grid-cols-8 grid-cols-4 my-6">
           {genderBooks.map((book) => (
             <Button
               title={book}
@@ -60,7 +61,9 @@ export default function Home() {
         </div>
 
         <Title title="Livros recomendados" />
+
+        <Card />
       </Container>
-    </>
+    </div>
   );
 }
