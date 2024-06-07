@@ -20,7 +20,7 @@ HERO CODE - Searching Books
 
 ## Frontend Libraries
 
-- <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — A JavaScript library for building user interfaces
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — React lets you build user interfaces out of individual pieces called components. Create your own React components like Thumbnail, LikeButton, and Video. Then combine them into entire screens, pages, and apps.
 
 - [Vite](https://vitejs.dev/guide/)
 - [Tailwindcss](https://tailwindcss.com/docs/installation)
@@ -28,8 +28,8 @@ HERO CODE - Searching Books
 
 ## Backend Libraries
 
-- <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /> Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
-  <br />
+<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /> — Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+<br />
 
 - [Node JS](https://nodejs.org/en/download/package-manager)
 - [Express JS](https://expressjs.com/pt-br/starter/installing.html)
