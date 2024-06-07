@@ -26,11 +26,10 @@ HERO CODE - Searching Books
 - [Tailwindcss](https://tailwindcss.com/docs/installation)
 - [Google Fonts](https://fonts.google.com/)
 
-##
-
 ## Backend Libraries
 
 - [Node JS](https://nodejs.org/en/download/package-manager)
+- [Express JS](https://expressjs.com/pt-br/starter/installing.html)
 
 ## Important Settings
 
@@ -50,9 +49,15 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 - Install classnames: `npm install classnames`;
 - Install Router: `npm install react-router-dom`;
 
+##
+
 > Backend:
 
 - Install package.json: `npm init -y`;
+- Install Express: `npm i express`;
+- Install Typescript: `npm i -D typescript @types/express`;
+- Install CORS: `npm i cors`;
+- Create file tsconfig.json: `npx tsc --init `;
 
 ## Demonstration
 
