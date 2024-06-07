@@ -40,6 +40,7 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
   - `npx tailwindcss init`; you follow steps in DOC;<br />
     <br />
 - Install classnames: `npm install classnames`;
+- Install Router: `npm install react-router-dom`;
 
 ## Demonstration
 
