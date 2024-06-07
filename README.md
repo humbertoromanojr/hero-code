@@ -26,6 +26,12 @@ HERO CODE - Searching Books
 - [Tailwindcss](https://tailwindcss.com/docs/installation)
 - [Google Fonts](https://fonts.google.com/)
 
+##
+
+## Backend Libraries
+
+- [Node JS](https://nodejs.org/en/download/package-manager)
+
 ## Important Settings
 
 🇺🇸
@@ -34,6 +40,8 @@ These other settings are extremely important, without them, your application wil
 🇧🇷
 Estas outras configurações, são de extrema importância, sem elas, a sua aplicação não vai funcionar, se não seguir passo a passo.
 
+> Frontend:
+
 - Install ViteJS: `npm create vite@latest`;
 - Install Tailwindcss: <br />
   - `npm install -D tailwindcss postcss autoprefixer`; <br />
@@ -41,6 +49,10 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
     <br />
 - Install classnames: `npm install classnames`;
 - Install Router: `npm install react-router-dom`;
+
+> Backend:
+
+- Install package.json: `npm init -y`;
 
 ## Demonstration
 
