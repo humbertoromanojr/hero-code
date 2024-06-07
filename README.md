@@ -28,6 +28,9 @@ HERO CODE - Searching Books
 
 ## Backend Libraries
 
+- <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /> Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+  <br />
+
 - [Node JS](https://nodejs.org/en/download/package-manager)
 - [Express JS](https://expressjs.com/pt-br/starter/installing.html)
 
@@ -56,8 +59,9 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 - Install package.json: `npm init -y`;
 - Install Express: `npm i express`;
 - Install Typescript: `npm i -D typescript @types/express`;
-- Install CORS: `npm i cors`;
+- Install CORS: `npm i cors and npm i --save-dev @types/cors`;
 - Create file tsconfig.json: `npx tsc --init `;
+- Install TSX: `npm i tsx -D`;
 
 ## Demonstration
 
