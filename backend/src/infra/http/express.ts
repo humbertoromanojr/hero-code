@@ -1,6 +1,8 @@
 import express, { Application } from "express";
 import cors from "cors";
 
+import { errorMiddleware } from "../middlewares/error.middleware";
+
 class Express {
   app: Application;
 
@@ -16,7 +18,9 @@ class Express {
     this.app.use(cors());
   }
 
-  private errorMiddlewares() {}
+  private errorMiddlewares() {
+    this.app.use(errorMiddleware);
+  }
 
   listen() {
     this.app.listen(3333, () => {
