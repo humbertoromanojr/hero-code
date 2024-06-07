@@ -16,10 +16,10 @@ export default function Button({
   return (
     <button
       className={classNames([
-        `bg-evergreen-light px-6 py-3 rounded-lg shadow text-white font-medium mt-3`,
-        variant === "dark" && `bg-evergreen-light`,
+        `bg-evergreen-light px-6 py-3 rounded-lg shadow font-medium mt-3`,
+        variant === "dark" && `bg-evergreen-light  text-white`,
         variant === "light" &&
-          `text-evergreen-light bg-white border-evergreen-light border-2`,
+          `bg-white border-evergreen-light border-2 text-evergreen-light`,
         classname,
       ])}
       onClick={onClick}

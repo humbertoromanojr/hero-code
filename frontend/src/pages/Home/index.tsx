@@ -5,6 +5,7 @@ import Container from "../../components/Container/Container";
 import Title from "../../components/Title/Title";
 import Button from "../../components/Button/Button";
 import Card from "../../components/Card/Card";
+import { Input } from "../../components/Input/Input";
 
 const genderBooks = [
   "Ação",
@@ -21,7 +22,6 @@ export default function Home() {
 
   const handleSelect = useCallback(
     (title: string) => {
-      console.log("==> home: ", title);
       if (selectedGender.includes(title)) {
         const removeGender = selectedGender.filter((item) => item !== title);
         setSelectedGender(removeGender);
@@ -39,8 +39,9 @@ export default function Home() {
         <Title title="O que você quer ler hoje?" />
 
         <div className="gap-8 grid md:grid-cols-8 grid-cols-4 my-6">
-          {genderBooks.map((book) => (
+          {genderBooks.map((book, index) => (
             <Button
+              key={index}
               title={book}
               variant={selectedGender.includes(book) ? "dark" : "light"}
               onClick={() => handleSelect(book)}
@@ -53,16 +54,12 @@ export default function Home() {
             Sobre o que você gostaria de receber uma recomendação de livro?
           </p>
 
-          <input
-            type="text"
-            placeholder="Eu gostaria de ler..."
-            className="outline-none shadow-lg border border-gray-100 rounded-3xl w-full px-6 py-3 mt-3"
-          />
+          <Input placeholder="Eu gostaria de ler..." />
         </div>
 
-        <Title title="Livros recomendados" />
+        <Title title="Livros recomendados" classname="my-5" />
 
-        <Card />
+        <Card id="123" />
       </Container>
     </div>
   );
