@@ -33,6 +33,7 @@ HERO CODE - Searching Books
 
 - [Node JS](https://nodejs.org/en/download/package-manager)
 - [Express JS](https://expressjs.com/pt-br/starter/installing.html)
+- [Zod](https://zod.dev/?id=introduction)
 
 ## Important Settings
 
@@ -62,6 +63,7 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 - Install CORS: `npm i cors and npm i --save-dev @types/cors`;
 - Create file tsconfig.json: `npx tsc --init `;
 - Install TSX: `npm i tsx -D`;
+- Install ZOD: `npm i zod`;
 
 ## Demonstration
 
