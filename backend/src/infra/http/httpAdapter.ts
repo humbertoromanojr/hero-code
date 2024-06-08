@@ -1,8 +1,11 @@
-interface HttpRequest {
+export interface HttpRequest {
   body?: any;
   headers?: any;
   params?: any;
   query?: any;
 }
 
-interface HttpResponse {}
+interface HttpResponse {
+  status: number;
+  message: string;
+}
