@@ -5,5 +5,5 @@ import { BooksController } from "../../app/controllers/books.controller";
 export const BookRoutes = (router: Router) => {
   const booksController = new BooksController();
 
-  router.post("/books", booksController.create);
+  router.post("/books", routerAdapter(booksController, "create"));
 };
