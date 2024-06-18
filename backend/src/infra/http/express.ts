@@ -1,8 +1,11 @@
 import express, { Application } from "express";
 import cors from "cors";
+import dotenv from "dotenv";
 
-import { errorMiddleware } from "../middlewares/error.middleware";
 import { BookRoutes } from "../router/booksRoutes";
+import { connect } from "../database/mongoose";
+
+dotenv.config();
 
 class Express {
   app: Application;
@@ -10,7 +13,7 @@ class Express {
   constructor() {
     this.app = express();
     this.initMiddlewares();
-    this.errorMiddlewares();
+
     BookRoutes(this.app);
   }
 
@@ -20,12 +23,9 @@ class Express {
     this.app.use(cors());
   }
 
-  private errorMiddlewares() {
-    this.app.use(errorMiddleware);
-  }
-
   listen() {
     this.app.listen(3333, () => {
+      connect();
       console.log("Server is running on port 3333");
     });
   }
