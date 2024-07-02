@@ -64,6 +64,8 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 - Create file tsconfig.json: `npx tsc --init `;
 - Install TSX: `npm i tsx -D`;
 - Install ZOD: `npm i zod`;
+- Install Mongoose: `npm i mongoose`;
+- Install Dotenv: `npm i dotenv`;
 
 ## Demonstration
 
