@@ -2,9 +2,12 @@ import { Router } from "express";
 
 import { BooksController } from "../../app/controllers/books.controller";
 import { routerAdapter } from "./routerAdapter";
+import { BooksUseCase } from "../../app/useCases/books.usecase";
+import { BooksRepositoryMongoose } from "../repository/books.repository";
 
 export const BookRoutes = (router: Router) => {
-  const booksController = new BooksController();
+  const booksUseCase = new BooksUseCase(new BooksRepositoryMongoose());
+  const booksController = new BooksController(booksUseCase);
 
   router.post("/books", routerAdapter(booksController, "create"));
 };
