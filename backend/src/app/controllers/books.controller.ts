@@ -1,19 +1,12 @@
 import { HttpRequest, HttpResponse } from "../../infra/http/httpAdapter";
 import { BookDto } from "../dto/bookDto";
+import { BooksUseCase } from "../useCases/books.usecase";
 
 class BooksController {
-  constructor() {}
+  constructor(private readonly booksUseCase: BooksUseCase) {}
 
-  show() {
-    //return all books
-  }
-
-  find() {
-    //return one book
-  }
-
-  async create(HttpRequest: HttpRequest): Promise<HttpResponse> {
-    const body: BookDto = HttpRequest.body;
+  async create(httpRequest: HttpRequest): Promise<HttpResponse> {
+    const body: BookDto = httpRequest.body;
 
     try {
       if (!body) {
@@ -23,9 +16,12 @@ class BooksController {
         };
       }
 
+      const response = await this.booksUseCase.createBook(body);
+
       return {
         status: 201,
         message: "Book created",
+        data: response,
       };
     } catch (error: any) {
       return {
