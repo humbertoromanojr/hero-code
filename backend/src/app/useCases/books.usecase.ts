@@ -11,6 +11,14 @@ class BooksUseCase {
   async createBook(dto: BookDto) {
     this.booksRepository.create(dto);
   }
+
+  async findBook(dto: BookDto) {
+    return this.booksRepository.find(dto);
+  }
+
+  async updateBook(dto: BookDto, id: string) {
+    return this.booksRepository.update(dto, id);
+  }
 }
 
 export { BooksUseCase };

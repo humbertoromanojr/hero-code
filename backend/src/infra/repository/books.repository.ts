@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
+
 import { BookDto } from "../../app/dto/bookDto";
 import { BooksRepository } from "../../app/repository/books.repository";
+import { BookEntity } from "../../domain/entity/book.entity";
 
 const booksSchema = new mongoose.Schema({
   title: String,
@@ -24,16 +26,16 @@ class BooksRepositoryMongoose implements BooksRepository {
     return books.save();
   }
 
-  async find(dto: BookDto) {
-    const response = await books.findOne({ title: dto.title });
+  async find(dto: BookDto): Promise<BookEntity | null> {
+    const response = await Books.findOne({ title: dto.title });
 
-    return response;
+    return response ? response.toObject() : null;
   }
 
-  async update(dto: BookDto, id: string) {
+  async update(dto: BookDto, id: string): Promise<BookEntity | null> {
     const response = await Books.findByIdAndUpdate(id, dto);
 
-    return response;
+    return response ? response.toObject() : null;
   }
 }
 export { BooksRepositoryMongoose };

@@ -30,6 +30,59 @@ class BooksController {
       };
     }
   }
+
+  async find(httpRequest: HttpRequest): Promise<HttpResponse> {
+    const dto: BookDto = httpRequest.query;
+
+    try {
+      if (!dto) {
+        return {
+          status: 400,
+          message: "Missing Book finding",
+        };
+      }
+
+      const response = await this.booksUseCase.findBook(dto);
+
+      return {
+        status: 200,
+        message: "Book finding",
+        data: response,
+      };
+    } catch (error: any) {
+      return {
+        status: 400,
+        message: error.message,
+      };
+    }
+  }
+
+  async update(httpRequest: HttpRequest): Promise<HttpResponse> {
+    const dto: BookDto = httpRequest.query;
+    const id: string = httpRequest.params.id;
+
+    try {
+      if (!dto) {
+        return {
+          status: 400,
+          message: "Missing book",
+        };
+      }
+
+      const response = await this.booksUseCase.updateBook(dto, id);
+
+      return {
+        status: 201,
+        message: "Book updated",
+        data: response,
+      };
+    } catch (error: any) {
+      return {
+        status: 400,
+        message: error.message,
+      };
+    }
+  }
 }
 
 export { BooksController };
